@@ -25,7 +25,7 @@ export const DrawerContent: React.FC<DrawerContentPropsType> = ({
                     <p className="text-[20px] font-medium">Yuliia Hryn</p>
                 </div>
                 <div className="mt-4">
-                    <CardSwitch />
+                    <CardSwitch defaultValue="some value" />
                 </div>
                 <div className="mt-10">
                     <CartItem />
