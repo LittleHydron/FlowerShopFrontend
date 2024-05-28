@@ -118,7 +118,10 @@ const HomePage = () => {
                                     addCartItem({
                                         id: String(data.bouqueteId),
                                         name: data.name,
+                                        price: 0, // або інше значення, якщо потрібно
                                         quantity: 1,
+                                        city: "",
+                                        packing: "",
                                     })
                                 );
                         }}
@@ -142,3 +145,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
