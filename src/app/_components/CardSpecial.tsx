@@ -10,7 +10,7 @@ export const CardSpecial: React.FC<CardPropsType> = ({
     id,
     image,
     title,
-    price,
+    price, // Додаємо властивість price сюди
     className,
     ...rest
 }) => {

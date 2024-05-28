@@ -10,12 +10,14 @@ export interface CardPropsType extends ComponentPropsWithRef<"div"> {
     id: string;
     image: string;
     title: string;
+    price: number;
 }
 
 export const Card: React.FC<CardPropsType> = ({
     id,
     image,
     title,
+    price, // Додаємо властивість price сюди
     className,
     ...rest
 }) => {
@@ -45,12 +47,18 @@ export const Card: React.FC<CardPropsType> = ({
                     <p className="text-[20px]">{title}</p>
                 </div>
                 <div>
+                    <p className="text-[20px]">{price}</p>
+                </div>
+                <div>
                     <button
                         onClick={() => {
                             addItem({
                                 id: id,
                                 name: title,
+                                price, // Додаємо властивість price сюди
                                 quantity: 1,
+                                city: "",
+                                packing: "",
                             });
                         }}
                         className="w-[40px] h-[40px] rounded-full border-black border flex items-center justify-center"

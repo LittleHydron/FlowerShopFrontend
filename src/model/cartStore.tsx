@@ -5,6 +5,9 @@ export interface Item {
     id: string;
     name: string;
     quantity: number;
+    price: number;
+    city: string;
+    packing: string;
 }
 
 interface StoreState {
